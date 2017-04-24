@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type='text/css' rel='stylesheet' href="style.css">
+    <script type='text/javascript' src='script.js'></script>
+
+    <title>Okay</title>
+  </head>
+  <body>
+  <div id='info'>  This is the Mars Rover control center, <br> Select the rover you would like to control, <br> Type in a series of commands use 'f' to move forward, 'b' to move backward, 'l' to turn left, 'r' to turn right. <br> You can type in a series of controls such as "fflfrbff". <br> Hit "Submit Controls" once your controls are in. </div>
+    <div style="width:100%; overflow: auto;">
+    <form name="controlForm" id="form">
+      <input type="text" name="controls" id="controlText">
+      <input type="button" value="Submit Controls" onClick="moveRover(roverTwo, myRover)">
+      <input type="radio" name="rover" value="green" id="greenRadio"> Green Arrow Rover
+      <input type="radio" name="rover" value="blue" id="blueRadio"> Blue Arrow Rover
+    </form>
+    <div id="verticalCoords"></div>
+    <div id="coordinates"></div>
+    <div id="imageGrid"> </div>
+  </div>
+  </body>
+</html>
